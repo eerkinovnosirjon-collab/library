@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUTUBXONA</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+  <h1>📚 KUTUBXONA</h1>
+  <p>O'zing yaratgan saytlarni joyla!</p>
+</header>
+
+<nav>
+  <button id="homeBtn">🏠 Bosh sahifa</button>
+  <button id="addBtn">➕ Sayt qo'shish</button>
+</nav>
+
+<main>
+  <section id="bosh">
+    <h2>🌐 Barcha saytlar</h2>
+    <input id="qidiruv" placeholder="Sayt qidirish...">
+    <div id="saytlar">Yuklanmoqda...</div>
+  </section>
+
+  <section id="forma" class="yashirin">
+    <h2>Yangi sayt qo'shish</h2>
+
+    <form id="saytForm">
+      <label>Sayt nomi</label>
+      <input id="nom" required maxlength="60">
+
+      <label>Muallif ismi</label>
+      <input id="muallif" required maxlength="50">
+
+      <label>Sayt havolasi</label>
+      <input id="link" type="url"
+        placeholder="https://example.com" required>
+
+      <label>Sayt haqida</label>
+      <textarea id="tavsif" maxlength="500"></textarea>
+
+      <button id="qoshishBtn" type="submit">
+        🚀 Saytni joylash
+      </button>
+    </form>
+  </section>
+</main>
+
+<!-- TO'LIQ EKRAN SAYT OYNASI -->
+<div id="fullscreen" class="yashirin">
+  <div id="fullTop">
+    <strong id="fullTitle">Sayt</strong>
+    <button id="closeFull">✕ Yopish</button>
+  </div>
+
+  <iframe id="saytFrame" title="Sayt oynasi"
+    allow="fullscreen"></iframe>
+</div>
+
+<footer>
+  <h3>📚 KUTUBXONA</h3>
+  <p>Barcha saytlar bir joyda.</p>
+  <p>© 2026 KUTUBXONA</p>
+</footer>
+
+<p id="holat"></p>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>

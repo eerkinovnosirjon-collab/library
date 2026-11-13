@@ -1,0 +1,183 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #142c50, #512c85);
+  text-align: center;
+  padding: 40px 15px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 18px;
+  background: #192438;
+}
+
+button {
+  border: none;
+  padding: 13px 20px;
+  border-radius: 9px;
+  background: #7954ed;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #9879ff;
+}
+
+main {
+  max-width: 1100px;
+  min-height: 65vh;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 18px;
+  background: #202d42;
+  color: white;
+  border: 1px solid #43516b;
+  border-radius: 9px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+#saytlar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.karta {
+  background: #202d42;
+  padding: 22px;
+  border: 1px solid #34435c;
+  border-radius: 13px;
+  overflow-wrap: anywhere;
+}
+
+.karta h3 {
+  color: #bba8ff;
+  margin-bottom: 12px;
+}
+
+.karta p {
+  margin: 10px 0;
+  color: #c5ccda;
+}
+
+.karta button {
+  margin: 10px 5px 0 0;
+}
+
+.ochish {
+  background: #168b68;
+}
+
+.ochirish {
+  background: #b83d50;
+}
+
+.yashirin {
+  display: none !important;
+}
+
+/* TO'LIQ EKRAN OYNA */
+#fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: #101827;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+}
+
+#fullscreen.yashirin {
+  display: none !important;
+}
+
+#fullTop {
+  height: 55px;
+  min-height: 55px;
+  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #192438;
+}
+
+#closeFull {
+  background: #b83d50;
+}
+
+#saytFrame {
+  display: block;
+  width: 100%;
+  height: calc(100% - 55px);
+  flex: 1;
+  border: none;
+  background: white;
+}
+
+footer {
+  background: #192438;
+  text-align: center;
+  padding: 30px;
+  color: #aeb8ca;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+#holat {
+  text-align: center;
+  padding: 10px;
+  color: #bba8ff;
+}
+
+@media(max-width: 500px) {
+  header h1 {
+    font-size: 29px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
